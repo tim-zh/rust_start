@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+Hello, World at root!
+<script src="photonpaw_client.js"></script>
+<script>
+    PhotonPaw.start(() => {
+        PhotonPaw.ask("a", "ui query").then(msg => {
+            PhotonPaw.send("b", msg);
+        });
+    });
+</script>
+</body>
+</html>
+
